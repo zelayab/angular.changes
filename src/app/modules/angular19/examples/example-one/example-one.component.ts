@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { CodeExampleComponent } from '../../../../components/code-example/code-example.component';
 
 @Component({
   selector: 'app-example-one',
@@ -33,6 +34,9 @@ import { Component } from '@angular/core';
         }
       </div>
     }
+    CODE:
+      <code-example [code]="'const a = 1; while(true){}'"></code-example>
+      <br>
   `,
   styles: [`
     h3 { color: #2c3e50; }
@@ -41,7 +45,7 @@ import { Component } from '@angular/core';
     hr { margin: 20px 0; border: 1px solid #ddd; }
   `],
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, CodeExampleComponent],
 })
 export class ExampleOneComponent {
   items = [
