@@ -1,0 +1,12 @@
+[
+  {
+    "id": "feature1",
+    "title": "Standalone Components",
+    "description": "Standalone components simplify module management in Angular."
+  },
+  {
+    "id": "feature2",
+    "title": "Signal API",
+    "description": "Signals provide a reactive way to manage state in Angular applications."
+  }
+]

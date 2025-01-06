@@ -1,0 +1,18 @@
+[
+  {
+    "version": "angular-18",
+    "examples": [
+      { "id": "example-1", "title": "Example 1" },
+      { "id": "example-2", "title": "Example 2" }
+    ]
+  },
+  {
+    "version": "angular-19",
+    "examples": [
+      { "id": "example-1", "title": "Example 1" },
+      { "id": "example-2", "title": "Example 2" },
+      { "id": "example-3", "title": "Example 3" },
+      { "id": "example-4", "title": "Example 4" }
+    ]
+  }
+]

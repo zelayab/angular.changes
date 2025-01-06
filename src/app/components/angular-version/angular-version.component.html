@@ -1,0 +1,11 @@
+<div *ngIf="!isDetailView">
+  <h2>{{ version?.version }}</h2>
+  <p>Here are some examples of changes introduced in {{ version?.version }}:</p>
+  <ul>
+    <li *ngFor="let example of version?.examples">
+      <a [routerLink]="[example.id]">{{ example.title }}</a>
+    </li>
+  </ul>
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,29 @@
+.msb {
+  width: 200px;
+  background-color: #f5f7f9;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  min-height: 100%;
+  overflow-y: auto;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+
+  .navbar {
+    background-color: inherit;
+    .navbar-brand {
+      color: #39464e;
+    }
+  }
+
+  .nav-link {
+    padding: 15px;
+    color: #39464e;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #eaeaea;
+    }
+  }
+}
