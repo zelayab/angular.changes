@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ExampleEightComponent } from '../../modules/angular19/examples/example-eight/example-eight.component';
+import { ExampleElevenComponent } from '../../modules/angular19/examples/example-eleven/example-eleven.component';
 import { ExampleFiveComponent } from '../../modules/angular19/examples/example-five/example-five.component';
 import { ExampleFourComponent } from '../../modules/angular19/examples/example-four/example-four.component';
 import { ExampleNineComponent } from '../../modules/angular19/examples/example-nine/example-nine.component';
@@ -8,7 +9,9 @@ import { ExampleOneComponent } from '../../modules/angular19/examples/example-on
 import { ExampleSevenComponent } from '../../modules/angular19/examples/example-seven/example-seven.component';
 import { ExampleSixComponent } from '../../modules/angular19/examples/example-six/example-six.component';
 import { ExampleTenComponent } from '../../modules/angular19/examples/example-ten/example-ten.component';
+import { ExampleThirteenComponent } from '../../modules/angular19/examples/example-thirteen/example-thirteen.component';
 import { ExampleThreeComponent } from '../../modules/angular19/examples/example-three/example-three.component';
+import { ExampleTwelveComponent } from '../../modules/angular19/examples/example-twelve/example-twelve.component';
 import { ExampleTwoComponent } from '../../modules/angular19/examples/example-two/example-two.component';
 
 @Component({
@@ -67,6 +70,15 @@ export class ExampleDetailComponent implements OnInit {
         break;
       case 'example-10':
         component = ExampleTenComponent;
+        break;
+      case 'example-11':
+        component = ExampleElevenComponent;
+        break;
+      case 'example-12':
+        component = ExampleTwelveComponent;
+        break;
+      case 'example-13':
+        component = ExampleThirteenComponent
         break;
       default:
         console.warn('Component not found for ID:', id);

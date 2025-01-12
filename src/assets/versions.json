@@ -18,7 +18,10 @@
       { "id": "example-7", "title": "Example 7" },
       { "id": "example-8", "title": "Example 8" },
       { "id": "example-9", "title": "Example 9" },
-      { "id": "example-10", "title": "Example 10" }
+      { "id": "example-10", "title": "Example 10" },
+      { "id" : "example-11", "title": "Example 11" },
+      { "id" : "example-12", "title": "Example 12" },
+      { "id" : "example-13", "title": "Example 13" }
     ]
   }
 ]
