@@ -1,8 +1,8 @@
 import { provideHttpClient } from '@angular/common/http';
 import { ApplicationConfig } from '@angular/core';
 import { provideRouter } from '@angular/router';
+import { provideHighlightOptions } from 'ngx-highlightjs';
 import { routes } from './app.routes';
-import { HIGHLIGHT_OPTIONS, provideHighlightOptions } from 'ngx-highlightjs';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -12,5 +12,6 @@ export const appConfig: ApplicationConfig = {
       fullLibraryLoader: () => import('highlight.js'),
       themePath: 'assets/highlight.js/styles/atom-one-dark.css', // Ruta al tema oscuro
     }),
+    { provide: 'zone.js', useValue: null }, // Desactiva Zone.js
   ],
 };

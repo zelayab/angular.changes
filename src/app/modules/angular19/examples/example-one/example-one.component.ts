@@ -34,8 +34,8 @@ import { CodeExampleComponent } from '../../../../components/code-example/code-e
         }
       </div>
     }
-    CODE:
-      <code-example [code]="'const a = 1; while(true){}'"></code-example>
+    Code con Angular 19:
+      <code-example [code]="codeExample"></code-example>
       <br>
   `,
   styles: [`
@@ -48,6 +48,21 @@ import { CodeExampleComponent } from '../../../../components/code-example/code-e
   imports: [CommonModule, CodeExampleComponent],
 })
 export class ExampleOneComponent {
+
+
+ codeExample = `
+    @for (item of items; track $index) {
+      <div>
+        <span>{{ item.name }}</span>
+        @if (item.active) {
+          <span style="color: green;"> (Activo)</span>
+        }
+        @else {
+          <span style="color: red;"> (Inactivo)</span>
+        }
+      </div>
+    }
+  `;
   items = [
     { name: 'Item 1', active: true },
     { name: 'Item 2', active: false },

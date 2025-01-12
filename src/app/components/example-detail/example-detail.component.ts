@@ -1,6 +1,14 @@
 import { Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { ExampleEightComponent } from '../../modules/angular19/examples/example-eight/example-eight.component';
+import { ExampleFiveComponent } from '../../modules/angular19/examples/example-five/example-five.component';
+import { ExampleFourComponent } from '../../modules/angular19/examples/example-four/example-four.component';
+import { ExampleNineComponent } from '../../modules/angular19/examples/example-nine/example-nine.component';
 import { ExampleOneComponent } from '../../modules/angular19/examples/example-one/example-one.component';
+import { ExampleSevenComponent } from '../../modules/angular19/examples/example-seven/example-seven.component';
+import { ExampleSixComponent } from '../../modules/angular19/examples/example-six/example-six.component';
+import { ExampleTenComponent } from '../../modules/angular19/examples/example-ten/example-ten.component';
+import { ExampleThreeComponent } from '../../modules/angular19/examples/example-three/example-three.component';
 import { ExampleTwoComponent } from '../../modules/angular19/examples/example-two/example-two.component';
 
 @Component({
@@ -35,6 +43,30 @@ export class ExampleDetailComponent implements OnInit {
         break;
       case 'example-2':
         component = ExampleTwoComponent;
+        break;
+      case 'example-3':
+        component = ExampleThreeComponent;
+        break;
+      case 'example-4':
+        component = ExampleFourComponent;
+        break;
+      case 'example-5':
+        component = ExampleFiveComponent;
+        break;
+      case 'example-6':
+        component = ExampleSixComponent;
+        break;
+      case 'example-7':
+        component = ExampleSevenComponent;
+        break;
+      case 'example-8':
+        component = ExampleEightComponent;
+        break;
+      case 'example-9':
+        component = ExampleNineComponent;
+        break;
+      case 'example-10':
+        component = ExampleTenComponent;
         break;
       default:
         console.warn('Component not found for ID:', id);
