@@ -1,6 +1,6 @@
 <div class="example-list">
-  <h2>{{ version }} it's Here !!!!</h2>
-  <p>Here are some examples of changes introduced in {{ version }}:</p>
+  <h2>{{ version   | titlecase  }}</h2>
+  <p>Novedades y recursos de: {{ version | titlecase}}:</p>
   <div *ngIf="version === 'angular-19'">
     <b>Documentación Oficial:</b>
     <ul>
