@@ -1,7 +1,16 @@
 <div class="example-list">
   <h2>{{ version   | titlecase  }}</h2>
   <p>Novedades y recursos de: {{ version | titlecase}}:</p>
+  <b>
+    Ejemplos
+  </b>
+  <ul>
+    <li *ngFor="let example of examples">
+      <a [routerLink]="['/', version, example.id]">{{ example.title }}</a>
+    </li>
+  </ul>
   <div *ngIf="version === 'angular-19'">
+    <hr>
     <b>Documentación Oficial:</b>
     <ul>
       <li>
@@ -71,13 +80,6 @@
     </ul>
   </div>
 
-  <b>
-    Ejemplos
-  </b>
-  <ul>
-    <li *ngFor="let example of examples">
-      <a [routerLink]="['/', version, example.id]">{{ example.title }}</a>
-    </li>
-  </ul>
+
 
 </div>
