@@ -2,15 +2,15 @@
   {
     "version": "angular-18",
     "examples": [
-      { "id": "example-1", "title": "Example 1" },
-      { "id": "example-2", "title": "Example 2" }
+      { "id": "example-1", "title": "Control Flow Syntax" },
+      { "id": "example-2", "title": "Defer Loading" }
     ]
   },
   {
     "version": "angular-19",
     "examples": [
-      { "id": "example-1", "title": "Example 1" },
-      { "id": "example-2", "title": "Example 2" },
+      { "id": "example-1", "title": "Control Flow Syntax (Angular 18)" },
+      { "id": "example-2", "title": "Defer Loading (Angular 18)" },
       { "id": "example-3", "title": "Example 3" },
       { "id": "example-4", "title": "Example 4" },
       { "id": "example-5", "title": "Example 5" },
