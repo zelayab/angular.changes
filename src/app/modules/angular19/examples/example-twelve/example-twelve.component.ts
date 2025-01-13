@@ -4,7 +4,7 @@ import { CodeExampleComponent } from '../../../../components/code-example/code-e
 @Component({
   selector: 'app-example-lazy-guards',
   template: `
-    <h3>Example: Lazy Route Guards</h3>
+    <h3>Lazy Route Guards</h3>
 
     <h4>¿Qué son los Lazy Route Guards?</h4>
     <p>

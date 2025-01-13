@@ -5,7 +5,7 @@ import { CodeExampleComponent } from '../../../../components/code-example/code-e
 @Component({
   selector: 'app-example-one',
   template: `
-    <h3>Example 3: Default Standalone Components </h3>
+    <h3>Default Standalone Components </h3>
 
     <p><b>Antes (Angular 18 y versiones anteriores)</b>:</p>
     <code-example [code]="codeExample"></code-example>

@@ -4,7 +4,7 @@ import { CodeExampleComponent } from '../../../../components/code-example/code-e
 @Component({
   selector: 'app-example-five',
   template: `
-    <h3>Example 5: Zoneless Mode</h3>
+    <h3>Zoneless Mode</h3>
 
     <h4>¿Qué es el Zoneless Mode?</h4>
     <p>

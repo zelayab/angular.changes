@@ -4,7 +4,7 @@ import { CodeExampleComponent } from '../../../../components/code-example/code-e
 @Component({
   selector: 'app-example-six',
   template: `
-    <h3>Example 6: Signals en Angular</h3>
+    <h3>Signals en Angular</h3>
 
     <h4>¿Qué son los Signals?</h4>
     <p>

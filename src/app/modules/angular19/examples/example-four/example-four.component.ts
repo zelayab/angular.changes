@@ -5,7 +5,7 @@ import { CodeExampleComponent } from '../../../../components/code-example/code-e
 @Component({
   selector: 'app-example-four',
   template: `
-    <h3>Example 4: Standalone Reactive Forms</h3>
+    <h3>Standalone Reactive Forms</h3>
 
     <h4>Código del Componente:</h4>
 

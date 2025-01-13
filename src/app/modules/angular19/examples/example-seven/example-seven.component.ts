@@ -4,7 +4,7 @@ import { CodeExampleComponent } from '../../../../components/code-example/code-e
 @Component({
   selector: 'app-example-seven',
   template: `
-    <h3>Example 7: Dynamic Component Creation</h3>
+    <h3>Dynamic Component Creation</h3>
 
     <h4>¿Qué es?</h4>
     <p>

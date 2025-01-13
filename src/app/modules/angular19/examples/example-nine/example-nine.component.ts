@@ -13,7 +13,7 @@ interface UserForm {
 @Component({
   selector: 'app-example-nine',
   template: `
-    <h3>Example 9: Typed Reactive Forms</h3>
+    <h3>Typed Reactive Forms</h3>
 
     <h4>¿Qué son los Formularios Estrictamente Tipados?</h4>
     <p>

@@ -5,7 +5,7 @@ import { CodeExampleComponent } from '../../../../components/code-example/code-e
 @Component({
   selector: 'app-example-standalone-interceptors',
   template: `
-    <h3>Example: Standalone HTTP Interceptors</h3>
+    <h3>Standalone HTTP Interceptors</h3>
 
     <h4>¿Qué son los Standalone HTTP Interceptors?</h4>
     <p>

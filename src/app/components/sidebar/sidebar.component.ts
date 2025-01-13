@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, Location } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { RouterModule, Router } from '@angular/router';
 
@@ -14,10 +14,20 @@ export class SidebarComponent {
     { version: 'Angular 18', ruta: 'angular-18' },
     { version: 'Angular 19', ruta: 'angular-19' }
   ];
+  showBackBtn = false;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private location: Location) {
+    this.router.events.subscribe(() => {
+      console.log(this.router.url);
+      this.showBackBtn = this.router.url.split('/').length > 2;
+    });
+  }
 
   isActive(version: string): boolean {
     return this.router.url.includes(`/${version}`);
+  }
+
+  back() {
+    this.location.back();
   }
 }

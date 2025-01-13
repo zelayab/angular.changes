@@ -11,17 +11,17 @@
     "examples": [
       { "id": "example-1", "title": "Control Flow Syntax (Angular 18)" },
       { "id": "example-2", "title": "Defer Loading (Angular 18)" },
-      { "id": "example-3", "title": "Example 3" },
-      { "id": "example-4", "title": "Example 4" },
-      { "id": "example-5", "title": "Example 5" },
-      { "id": "example-6", "title": "Example 6" },
-      { "id": "example-7", "title": "Example 7" },
-      { "id": "example-8", "title": "Example 8" },
-      { "id": "example-9", "title": "Example 9" },
-      { "id": "example-10", "title": "Example 10" },
-      { "id" : "example-11", "title": "Example 11" },
-      { "id" : "example-12", "title": "Example 12" },
-      { "id" : "example-13", "title": "Example 13" }
+      { "id": "example-3", "title": "Default Standalone Components" },
+      { "id": "example-4", "title": "Standalone Reactive Forms" },
+      { "id": "example-5", "title": "Zoneless Mode" },
+      { "id": "example-6", "title": "Signals en Angular" },
+      { "id": "example-7", "title": "Dynamic Component Creation" },
+      { "id": "example-8", "title": "Granular Rehydration" },
+      { "id": "example-9", "title": "Typed Reactive Forms" },
+      { "id": "example-10", "title": "Optimized Dependency Injection" },
+      { "id" : "example-11", "title": "Router Debugging API" },
+      { "id" : "example-12", "title": "Lazy Route Guards" },
+      { "id" : "example-13", "title": "Standalone HTTP Interceptors" }
     ]
   }
 ]

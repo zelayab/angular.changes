@@ -5,7 +5,7 @@ import { CodeExampleComponent } from '../../../../components/code-example/code-e
 @Component({
   selector: 'app-example-eight',
   template: `
-    <h3>Example 8: Granular Rehydration</h3>
+    <h3>Granular Rehydration</h3>
 
     <h4>¿Qué es?</h4>
     <p>

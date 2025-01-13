@@ -4,7 +4,7 @@ import { CodeExampleComponent } from '../../../../components/code-example/code-e
 @Component({
   selector: 'app-example-six',
   template: `
-    <h3>Example 2: Deferred Loading</h3>
+    <h3>Deferred Loading</h3>
 
     <h4>¿Qué es el Deferred Loading?</h4>
     <p>

@@ -5,7 +5,7 @@ import { CodeExampleComponent } from '../../../../components/code-example/code-e
 @Component({
   selector: 'app-example-one',
   template: `
-    <h3>Example 1: Control Flow Syntax</h3>
+    <h3>Control Flow Syntax</h3>
 
     <p><b>Antes (Angular 18 y versiones anteriores)</b>:</p>
     <div *ngFor="let item of items; let i = index">

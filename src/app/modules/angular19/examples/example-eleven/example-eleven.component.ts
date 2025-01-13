@@ -8,7 +8,7 @@ import { CodeExampleComponent } from '../../../../components/code-example/code-e
 @Component({
   selector: 'app-example-router-debugging',
   template: `
-    <h3>Example: Router Debugging API</h3>
+    <h3>Router Debugging API</h3>
 
     <h4>¿Qué es el Router Debugging API?</h4>
     <p>

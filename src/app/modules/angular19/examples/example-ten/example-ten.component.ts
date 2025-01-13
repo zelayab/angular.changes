@@ -7,7 +7,7 @@ import { CodeExampleComponent } from '../../../../components/code-example/code-e
 @Component({
   selector: 'app-example-ten',
   template: `
-    <h3>Example 10: Optimized Dependency Injection</h3>
+    <h3>Optimized Dependency Injection</h3>
 
     <h4>¿Qué es la Inyección de Dependencias Optimizada?</h4>
     <p>
