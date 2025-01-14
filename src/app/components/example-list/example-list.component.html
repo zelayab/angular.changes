@@ -1,85 +1,27 @@
 <div class="example-list">
-  <h2>{{ version   | titlecase  }}</h2>
-  <p>Novedades y recursos de: {{ version | titlecase}}:</p>
-  <b>
-    Ejemplos
-  </b>
+  <h2>{{ version | titlecase }}</h2>
+  <p>Novedades y recursos de: {{ version | titlecase }}:</p>
+  <b>Ejemplos</b>
   <ul>
     <li *ngFor="let example of examples">
       <a [routerLink]="['/', version, example.id]">{{ example.title }}</a>
     </li>
   </ul>
+
   <div *ngIf="version === 'angular-19'">
-    <hr>
+    <hr />
     <b>Documentación Oficial:</b>
     <ul>
-      <li>
-        <a href="https://angular.dev/guide/signals" target="_blank"
-          >Guía de Signals en Angular</a
-        >
-      </li>
-      <li>
-        <a href="https://angular.dev/essentials/signals" target="_blank"
-          >Reactividad con Signals</a
-        >
-      </li>
-      <li>
-        <a href="https://angular.dev/guide/forms/reactive-forms" target="_blank"
-          >Formularios Reactivos en Angular</a
-        >
-      </li>
-      <li>
-        <a href="https://angular.dev/guide/forms/typed-forms" target="_blank"
-          >Formularios Estrictamente Tipados</a
-        >
-      </li>
-      <li>
-        <a href="https://angular.dev/guide/universal" target="_blank"
-          >Guía de Renderizado en Angular</a
-        >
+      <li *ngFor="let doc of officialDocs">
+        <a [href]="doc.url" target="_blank">{{ doc.title }}</a>
       </li>
     </ul>
 
     <b>Artículos Relevantes:</b>
     <ul>
-      <li>
-        <a
-          href="https://www.telerik.com/blogs/angular-basics-signals"
-          target="_blank"
-          >Angular Basics: Signals</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://www.yeou.dev/articulos/novedades-angular19"
-          target="_blank"
-          >Angular 19: Novedades</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://runebook.dev/es/docs/angular/guide/typed-forms"
-          target="_blank"
-          >Formularios Tipados en Angular</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://angular.love/strongly-typed-reactive-forms-in-angular/"
-          target="_blank"
-          >Formularios Reactivos Fuertemente Tipados en Angular</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://www.yeou.dev/articulos/novedades-angular19"
-          target="_blank"
-          >Angular 19: Novedades</a
-        >
+      <li *ngFor="let article of relevantArticles">
+        <a [href]="article.url" target="_blank">{{ article.title }}</a>
       </li>
     </ul>
   </div>
-
-
-
 </div>

@@ -5,10 +5,12 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class Angular19Service {
+export class LinkService {
+  private jsonUrl = 'assets/links.json'; // Asegúrate de colocar el JSON en la carpeta `assets`
+
   constructor(private http: HttpClient) {}
 
-  getChanges(): Observable<any[]> {
-    return this.http.get<any[]>('/assets/angular19-changes.json');
+  getLinks(): Observable<any> {
+    return this.http.get(this.jsonUrl);
   }
 }

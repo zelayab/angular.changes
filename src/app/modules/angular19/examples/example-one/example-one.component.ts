@@ -8,22 +8,18 @@ import { CodeExampleComponent } from '../../../../components/code-example/code-e
     <h3>Control Flow Syntax</h3>
 
     <p><b>Antes (Angular 18 y versiones anteriores)</b>:</p>
-    <div *ngFor="let item of items; let i = index">
-      <span>{{ item.name }}</span>
-      <span *ngIf="item.active; else inactive" style="color: green;">
-        (Activo)
-      </span>
-      <ng-template #inactive>
-        <span style="color: red;"> (Inactivo)</span>
-      </ng-template>
-    </div>
+    <code-example [code]="codeExample2"></code-example>
 
     <hr />
 
     <p><b>Ahora (Angular 19+ con
       <span style="color: red;">&#64;</span>for y
       for y &#64; if)</b>:</p>
-    @for (item of items; track $index) {
+
+    Code con Angular 19:
+    <code-example [code]="codeExample"></code-example>
+      <br>
+      @for (item of items; track $index) {
       <div>
         <span>{{ item.name }}</span>
         @if (item.active) {
@@ -34,10 +30,8 @@ import { CodeExampleComponent } from '../../../../components/code-example/code-e
         }
       </div>
     }
-    Code con Angular 19:
-      <code-example [code]="codeExample"></code-example>
-      <br>
   `,
+
   styles: [`
     h3 { color: #2c3e50; }
     div { margin: 5px 0; }
@@ -62,6 +56,18 @@ export class ExampleOneComponent {
         }
       </div>
     }
+  `;
+
+  codeExample2 = `
+    <div *ngFor="let item of items; let i = index">
+      <span>{{ item.name }}</span>
+      <span *ngIf="item.active; else inactive" style="color: green;">
+        (Activo)
+      </span>
+      <ng-template #inactive>
+        <span style="color: red;"> (Inactivo)</span>
+      </ng-template>
+    </div>
   `;
   items = [
     { name: 'Item 1', active: true },

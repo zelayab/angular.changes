@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
+import { LinkService } from '../../services/link.service';
 import { VersionService } from '../../services/version.service';
 
 @Component({
@@ -13,13 +14,20 @@ import { VersionService } from '../../services/version.service';
 export class ExampleListComponent {
   version: string | undefined;
   examples: Array<{ id: string; title: string }> = [];
+  officialDocs: Array<{ title: string; url: string }> = [];
+  relevantArticles: Array<{ title: string; url: string }> = [];
 
-  constructor(private route: ActivatedRoute, private versionService: VersionService) {}
+  constructor(private route: ActivatedRoute, private versionService: VersionService, private linkService: LinkService) {}
 
   ngOnInit(): void {
     this.route.params.subscribe((params) => {
       this.version = params['version'];
       this.loadExamples();
+    });
+
+    this.linkService.getLinks().subscribe((data) => {
+      this.officialDocs = data.officialDocs;
+      this.relevantArticles = data.relevantArticles;
     });
   }
 

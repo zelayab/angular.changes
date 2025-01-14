@@ -1,0 +1,42 @@
+{
+  "officialDocs": [
+    {
+      "title": "Guía de Signals en Angular",
+      "url": "https://angular.dev/guide/signals"
+    },
+    {
+      "title": "Reactividad con Signals",
+      "url": "https://angular.dev/essentials/signals"
+    },
+    {
+      "title": "Formularios Reactivos en Angular",
+      "url": "https://angular.dev/guide/forms/reactive-forms"
+    },
+    {
+      "title": "Formularios Estrictamente Tipados",
+      "url": "https://angular.dev/guide/forms/typed-forms"
+    },
+    {
+      "title": "Guía de Renderizado en Angular",
+      "url": "https://angular.dev/guide/universal"
+    }
+  ],
+  "relevantArticles": [
+    {
+      "title": "Angular Basics: Signals",
+      "url": "https://www.telerik.com/blogs/angular-basics-signals"
+    },
+    {
+      "title": "Angular 19: Novedades",
+      "url": "https://www.yeou.dev/articulos/novedades-angular19"
+    },
+    {
+      "title": "Formularios Tipados en Angular",
+      "url": "https://runebook.dev/es/docs/angular/guide/typed-forms"
+    },
+    {
+      "title": "Formularios Reactivos Fuertemente Tipados en Angular",
+      "url": "https://angular.love/strongly-typed-reactive-forms-in-angular/"
+    }
+  ]
+}
