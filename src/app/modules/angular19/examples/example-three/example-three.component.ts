@@ -7,7 +7,7 @@ import { CodeExampleComponent } from '../../../../components/code-example/code-e
   template: `
     <h3>Default Standalone Components </h3>
 
-    <p><b>Antes (Angular 18 y versiones anteriores)</b>:</p>
+    <p><b>Antes (Versiones anteriores)</b>:</p>
     <code-example [code]="codeExample"></code-example>
 
 

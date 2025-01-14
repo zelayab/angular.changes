@@ -7,12 +7,12 @@ import { CodeExampleComponent } from '../../../../components/code-example/code-e
   template: `
     <h3>Control Flow Syntax</h3>
 
-    <p><b>Antes (Angular 18 y versiones anteriores)</b>:</p>
+    <p><b>Antes</b>:</p>
     <code-example [code]="codeExample2"></code-example>
 
     <hr />
 
-    <p><b>Ahora (Angular 19+ con
+    <p><b>Ahora (con
       <span style="color: red;">&#64;</span>for y
       for y &#64; if)</b>:</p>
 

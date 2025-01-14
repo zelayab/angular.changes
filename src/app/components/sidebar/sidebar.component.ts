@@ -12,7 +12,7 @@ import { RouterModule, Router } from '@angular/router';
 export class SidebarComponent {
   @Input() versions: Array<{ version: string; ruta: string }> = [
     { version: 'Angular 18', ruta: 'angular-18' },
-    { version: 'Angular 19', ruta: 'angular-19' }
+    { version: 'Angular 19 Latest', ruta: 'angular-19' }
   ];
   showBackBtn = false;
 
