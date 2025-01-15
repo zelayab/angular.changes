@@ -38,5 +38,11 @@
       "title": "Formularios Reactivos Fuertemente Tipados en Angular",
       "url": "https://angular.love/strongly-typed-reactive-forms-in-angular/"
     }
+  ],
+  "cheatsheet":[
+    {
+      "title": "Angular Cheatsheet",
+      "url": "https://devtalles.com/files/angular-cheat-sheet.pdf"
+    }
   ]
 }

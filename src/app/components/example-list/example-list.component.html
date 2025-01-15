@@ -8,20 +8,36 @@
     </li>
   </ul>
 
-  <div *ngIf="version === 'angular-19'">
+  <div *ngIf="version === 'angular-19'"  class="d-flex gap-3">
     <hr />
-    <b>Documentación Oficial:</b>
-    <ul>
-      <li *ngFor="let doc of officialDocs">
-        <a [href]="doc.url" target="_blank">{{ doc.title }}</a>
-      </li>
-    </ul>
 
-    <b>Artículos Relevantes:</b>
-    <ul>
-      <li *ngFor="let article of relevantArticles">
-        <a [href]="article.url" target="_blank">{{ article.title }}</a>
-      </li>
-    </ul>
+    <div>
+      <b>Documentación Oficial:</b>
+      <ul>
+        <li *ngFor="let doc of officialDocs">
+          <a [href]="doc.url" target="_blank">{{ doc.title }}</a>
+        </li>
+      </ul>
+    </div>
+
+
+
+    <div class="flex" *ngIf="relevantArticles.length">
+      <b>Artículos Relevantes:</b>
+      <ul>
+        <li *ngFor="let article of relevantArticles">
+          <a [href]="article.url" target="_blank">{{ article.title }}</a>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <b>Cheatsheet:</b>
+      <ul>
+        <li *ngFor="let doc of cheatsheet">
+          <a [href]="doc.url" target="_blank">{{ doc.title }}</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>

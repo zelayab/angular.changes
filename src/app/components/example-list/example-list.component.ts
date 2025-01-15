@@ -16,6 +16,7 @@ export class ExampleListComponent {
   examples: Array<{ id: string; title: string }> = [];
   officialDocs: Array<{ title: string; url: string }> = [];
   relevantArticles: Array<{ title: string; url: string }> = [];
+  cheatsheet: Array<{ title: string; url: string }> = [];
 
   constructor(private route: ActivatedRoute, private versionService: VersionService, private linkService: LinkService) {}
 
@@ -28,7 +29,9 @@ export class ExampleListComponent {
     this.linkService.getLinks().subscribe((data) => {
       this.officialDocs = data.officialDocs;
       this.relevantArticles = data.relevantArticles;
+      this.cheatsheet = data.cheatsheet;
     });
+
   }
 
   loadExamples(): void {

@@ -15,9 +15,6 @@ import { CodeExampleComponent } from '../../../../components/code-example/code-e
 
     <p><b>Ahora (Angular 19) con
     <code-example [code]="codeExample2"></code-example>
-    CODE:
-      <code-example [code]="codeExample"></code-example>
-      <br>
   `,
   styles: [`
     h3 { color: #2c3e50; }
