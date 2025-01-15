@@ -9,8 +9,6 @@
   {
     "version": "angular-19",
     "examples": [
-      { "id": "example-1", "title": "Control Flow Syntax (Angular 18)" },
-      { "id": "example-2", "title": "Defer Loading (Angular 18)" },
       { "id": "example-3", "title": "Default Standalone Components" },
       { "id": "example-4", "title": "Standalone Reactive Forms" },
       { "id": "example-5", "title": "Zoneless Mode" },
